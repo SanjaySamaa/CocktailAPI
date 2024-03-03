@@ -1,0 +1,8 @@
+<%- include("./partials/header.ejs") %>
+<% if(locals.content){ %>
+    <% content = JSON.parse(content) %>
+    <h1><%=content.strDrink %></h1>
+    <% }else{ %>
+        <h1>error getting content</h1>
+        <% } %>
+<%- include("./partials/footer.ejs")%>
